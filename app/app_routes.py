@@ -5,7 +5,9 @@ from .models import User, Product, Order, OrderItem, db, Media
 main = Blueprint('main', __name__)
 product_bp = Blueprint('product', __name__)
 
-
+@main.route('/home')
+def home():
+    return "Hello world"
 
 @main.route('/products', methods=['GET'])
 def get_products():
