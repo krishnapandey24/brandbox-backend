@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="PY-242.21829.153">
+    <data-source name="brandbox$default@brandbox.mysql.pythonanywhere-services.com" uuid="7a6c645f-75af-486a-9add-3f1d72674df1">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>brandbox</user-name>
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>
