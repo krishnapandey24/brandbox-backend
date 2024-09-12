@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="History">
+    <option name="requestHistoryStates">
+      <list>
+        <requestHistoryState>
+          <option name="dateTime" value="1726128425496" />
+          <option name="id" value="9d15a221-5768-4a2c-aaec-f57b2a3575d9" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Authorization" />
+                    <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyNjEyNzc5OSwianRpIjoiMTMxNTk3MTEtZmUwYi00ZWE4LWEzZTYtOGZiNmRjOGE5MTE0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MiwibmJmIjoxNzI2MTI3Nzk5LCJjc3JmIjoiYWViYmY2NDMtMzE5Yi00ZTQ3LTg0MzktMDIwMjJhMmY0ZGFlIiwiZXhwIjoxNzI2MTI4Njk5fQ.0oBLgmyzqLmFywKcPWSRwpoQjI5KLCp8Y1bcvJNdwcg" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="4355dbd4-5777-4c71-8db8-cfa9f50d6ab6" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://127.0.0.1:5000/products" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="W3sicHJpY2UiOiIxOTkuMDAiLCJwcm9kdWN0X2lkIjozLCJwcm9kdWN0X25hbWUiOiJtZSIsInN0b2NrX3F1YW50aXR5IjoxMH0seyJwcmljZSI6IjE5OS4wMCIsInByb2R1Y3RfaWQiOjQsInByb2R1Y3RfbmFtZSI6Im1lIiwic3RvY2tfcXVhbnRpdHkiOjEwfSx7InByaWNlIjoiNTk5LjAwIiwicHJvZHVjdF9pZCI6NywicHJvZHVjdF9uYW1lIjoibmFtZV9mczg4Iiwic3RvY2tfcXVhbnRpdHkiOjMwMX1dCg==" />
+              <option name="bodyString" value="[&#10;  {&#10;    &quot;price&quot;: &quot;199.00&quot;,&#10;    &quot;product_id&quot;: 3,&#10;    &quot;product_name&quot;: &quot;me&quot;,&#10;    &quot;stock_quantity&quot;: 10&#10;  },&#10;  {&#10;    &quot;price&quot;: &quot;199.00&quot;,&#10;    &quot;product_id&quot;: 4,&#10;    &quot;product_name&quot;: &quot;me&quot;,&#10;    &quot;stock_quantity&quot;: 10&#10;  },&#10;  {&#10;    &quot;price&quot;: &quot;599.00&quot;,&#10;    &quot;product_id&quot;: 7,&#10;    &quot;product_name&quot;: &quot;name_fs88&quot;,&#10;    &quot;stock_quantity&quot;: 301&#10;  }&#10;]" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Server" />
+                    <option name="value" value="Werkzeug/3.0.4 Python/3.12.6" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Thu, 12 Sep 2024 08:07:05 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="232" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="close" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="9d15a221-5768-4a2c-aaec-f57b2a3575d9" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="[{&quot;price&quot;:&quot;199.00&quot;,&quot;product_id&quot;:3,&quot;product_name&quot;:&quot;me&quot;,&quot;stock_quantity&quot;:10},{&quot;price&quot;:&quot;199.00&quot;,&quot;product_id&quot;:4,&quot;product_name&quot;:&quot;me&quot;,&quot;stock_quantity&quot;:10},{&quot;price&quot;:&quot;599.00&quot;,&quot;product_id&quot;:7,&quot;product_name&quot;:&quot;name_fs88&quot;,&quot;stock_quantity&quot;:301}]&#10;" />
+              <option name="size" value="232" />
+              <option name="time" value="7583" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1726128844559" />
+          <option name="id" value="0d5da13b-d8d6-49b7-a7f8-efe5a4a74ba5" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="file" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\OneDrive\Pictures\o4vraah2gbw71.jpg" />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="multipart/form-data" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="4355dbd4-5777-4c71-8db8-cfa9f50d6ab6" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:5000/products/3/media" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9ZW4+Cjx0aXRsZT40MTUgVW5zdXBwb3J0ZWQgTWVkaWEgVHlwZTwvdGl0bGU+CjxoMT5VbnN1cHBvcnRlZCBNZWRpYSBUeXBlPC9oMT4KPHA+RGlkIG5vdCBhdHRlbXB0IHRvIGxvYWQgSlNPTiBkYXRhIGJlY2F1c2UgdGhlIHJlcXVlc3QgQ29udGVudC1UeXBlIHdhcyBub3QgJiMzOTthcHBsaWNhdGlvbi9qc29uJiMzOTsuPC9wPgo=" />
+              <option name="bodyString" value="&lt;!doctype html&gt;&#10;&lt;html lang=en&gt;&#10;&lt;title&gt;415 Unsupported Media Type&lt;/title&gt;&#10;&lt;h1&gt;Unsupported Media Type&lt;/h1&gt;&#10;&lt;p&gt;Did not attempt to load JSON data because the request Content-Type was not &amp;#39;application/json&amp;#39;.&lt;/p&gt;&#10;" />
+              <option name="code" value="415" />
+              <option name="contentType" value="text/html; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Server" />
+                    <option name="value" value="Werkzeug/3.0.4 Python/3.12.6" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Thu, 12 Sep 2024 08:14:04 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="text/html; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="215" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="close" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="0d5da13b-d8d6-49b7-a7f8-efe5a4a74ba5" />
+              <option name="message" value="Unsupported Media Type" />
+              <option name="prettyResponseType" value="HTML" />
+              <option name="previewType" value="HTML" />
+              <option name="rawBodyString" value="&lt;!doctype html&gt;&#10;&lt;html lang=en&gt;&#10;&lt;title&gt;415 Unsupported Media Type&lt;/title&gt;&#10;&lt;h1&gt;Unsupported Media Type&lt;/h1&gt;&#10;&lt;p&gt;Did not attempt to load JSON data because the request Content-Type was not &amp;#39;application/json&amp;#39;.&lt;/p&gt;&#10;" />
+              <option name="size" value="215" />
+              <option name="time" value="4" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1726128995171" />
+          <option name="id" value="0e8d9e34-734b-41ef-8ea4-29512fd2d926" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="file" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\OneDrive\Pictures\o4vraah2gbw71.jpg" />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="multipart/form-data" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="4355dbd4-5777-4c71-8db8-cfa9f50d6ab6" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:5000/products/3/media" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9ZW4+Cjx0aXRsZT41MDAgSW50ZXJuYWwgU2VydmVyIEVycm9yPC90aXRsZT4KPGgxPkludGVybmFsIFNlcnZlciBFcnJvcjwvaDE+CjxwPlRoZSBzZXJ2ZXIgZW5jb3VudGVyZWQgYW4gaW50ZXJuYWwgZXJyb3IgYW5kIHdhcyB1bmFibGUgdG8gY29tcGxldGUgeW91ciByZXF1ZXN0LiBFaXRoZXIgdGhlIHNlcnZlciBpcyBvdmVybG9hZGVkIG9yIHRoZXJlIGlzIGFuIGVycm9yIGluIHRoZSBhcHBsaWNhdGlvbi48L3A+Cg==" />
+              <option name="bodyString" value="&lt;!doctype html&gt;&#10;&lt;html lang=en&gt;&#10;&lt;title&gt;500 Internal Server Error&lt;/title&gt;&#10;&lt;h1&gt;Internal Server Error&lt;/h1&gt;&#10;&lt;p&gt;The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.&lt;/p&gt;&#10;" />
+              <option name="code" value="500" />
+              <option name="contentType" value="text/html; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Server" />
+                    <option name="value" value="Werkzeug/3.0.4 Python/3.12.6" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Thu, 12 Sep 2024 08:16:35 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="text/html; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="265" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="close" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="0e8d9e34-734b-41ef-8ea4-29512fd2d926" />
+              <option name="message" value="Internal Server Error" />
+              <option name="prettyResponseType" value="HTML" />
+              <option name="previewType" value="HTML" />
+              <option name="rawBodyString" value="&lt;!doctype html&gt;&#10;&lt;html lang=en&gt;&#10;&lt;title&gt;500 Internal Server Error&lt;/title&gt;&#10;&lt;h1&gt;Internal Server Error&lt;/h1&gt;&#10;&lt;p&gt;The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.&lt;/p&gt;&#10;" />
+              <option name="size" value="265" />
+              <option name="time" value="7332" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1726129326313" />
+          <option name="id" value="d1488ade-d40d-475d-be07-080638e1d882" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="file" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\OneDrive\Pictures\o4vraah2gbw71.jpg" />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="multipart/form-data" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="4355dbd4-5777-4c71-8db8-cfa9f50d6ab6" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:5000/products/3/media" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9ZW4+Cjx0aXRsZT41MDAgSW50ZXJuYWwgU2VydmVyIEVycm9yPC90aXRsZT4KPGgxPkludGVybmFsIFNlcnZlciBFcnJvcjwvaDE+CjxwPlRoZSBzZXJ2ZXIgZW5jb3VudGVyZWQgYW4gaW50ZXJuYWwgZXJyb3IgYW5kIHdhcyB1bmFibGUgdG8gY29tcGxldGUgeW91ciByZXF1ZXN0LiBFaXRoZXIgdGhlIHNlcnZlciBpcyBvdmVybG9hZGVkIG9yIHRoZXJlIGlzIGFuIGVycm9yIGluIHRoZSBhcHBsaWNhdGlvbi48L3A+Cg==" />
+              <option name="bodyString" value="&lt;!doctype html&gt;&#10;&lt;html lang=en&gt;&#10;&lt;title&gt;500 Internal Server Error&lt;/title&gt;&#10;&lt;h1&gt;Internal Server Error&lt;/h1&gt;&#10;&lt;p&gt;The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.&lt;/p&gt;&#10;" />
+              <option name="code" value="500" />
+              <option name="contentType" value="text/html; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Server" />
+                    <option name="value" value="Werkzeug/3.0.4 Python/3.12.6" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Thu, 12 Sep 2024 08:22:06 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="text/html; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="265" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="close" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="d1488ade-d40d-475d-be07-080638e1d882" />
+              <option name="message" value="Internal Server Error" />
+              <option name="prettyResponseType" value="HTML" />
+              <option name="previewType" value="HTML" />
+              <option name="rawBodyString" value="&lt;!doctype html&gt;&#10;&lt;html lang=en&gt;&#10;&lt;title&gt;500 Internal Server Error&lt;/title&gt;&#10;&lt;h1&gt;Internal Server Error&lt;/h1&gt;&#10;&lt;p&gt;The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.&lt;/p&gt;&#10;" />
+              <option name="size" value="265" />
+              <option name="time" value="7426" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1726129580872" />
+          <option name="id" value="128dd027-7a41-4f41-9d6b-9a7a3f744a18" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="file" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\OneDrive\Pictures\o4vraah2gbw71.jpg" />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="multipart/form-data" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="4355dbd4-5777-4c71-8db8-cfa9f50d6ab6" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:5000/products/3/media" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9ZW4+Cjx0aXRsZT41MDAgSW50ZXJuYWwgU2VydmVyIEVycm9yPC90aXRsZT4KPGgxPkludGVybmFsIFNlcnZlciBFcnJvcjwvaDE+CjxwPlRoZSBzZXJ2ZXIgZW5jb3VudGVyZWQgYW4gaW50ZXJuYWwgZXJyb3IgYW5kIHdhcyB1bmFibGUgdG8gY29tcGxldGUgeW91ciByZXF1ZXN0LiBFaXRoZXIgdGhlIHNlcnZlciBpcyBvdmVybG9hZGVkIG9yIHRoZXJlIGlzIGFuIGVycm9yIGluIHRoZSBhcHBsaWNhdGlvbi48L3A+Cg==" />
+              <option name="bodyString" value="&lt;!doctype html&gt;&#10;&lt;html lang=en&gt;&#10;&lt;title&gt;500 Internal Server Error&lt;/title&gt;&#10;&lt;h1&gt;Internal Server Error&lt;/h1&gt;&#10;&lt;p&gt;The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.&lt;/p&gt;&#10;" />
+              <option name="code" value="500" />
+              <option name="contentType" value="text/html; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Server" />
+                    <option name="value" value="Werkzeug/3.0.4 Python/3.12.6" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Thu, 12 Sep 2024 08:26:20 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="text/html; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="265" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="close" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="128dd027-7a41-4f41-9d6b-9a7a3f744a18" />
+              <option name="message" value="Internal Server Error" />
+              <option name="prettyResponseType" value="HTML" />
+              <option name="previewType" value="HTML" />
+              <option name="rawBodyString" value="&lt;!doctype html&gt;&#10;&lt;html lang=en&gt;&#10;&lt;title&gt;500 Internal Server Error&lt;/title&gt;&#10;&lt;h1&gt;Internal Server Error&lt;/h1&gt;&#10;&lt;p&gt;The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.&lt;/p&gt;&#10;" />
+              <option name="size" value="265" />
+              <option name="time" value="7307" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1726130429732" />
+          <option name="id" value="8e203e81-8e4b-4f30-b2ab-78b5bf790f06" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="file" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\OneDrive\Pictures\o4vraah2gbw71.jpg" />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="multipart/form-data" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="4355dbd4-5777-4c71-8db8-cfa9f50d6ab6" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:5000/products/3/media" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZWRpYV9pZCI6MSwibWVzc2FnZSI6Ik1lZGlhIGFkZGVkIHN1Y2Nlc3NmdWxseSJ9Cg==" />
+              <option name="bodyString" value="{&#10;  &quot;media_id&quot;: 1,&#10;  &quot;message&quot;: &quot;Media added successfully&quot;&#10;}" />
+              <option name="code" value="201" />
+              <option name="contentType" value="application/json" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Server" />
+                    <option name="value" value="Werkzeug/3.0.4 Python/3.12.6" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Thu, 12 Sep 2024 08:40:29 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="52" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="close" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="8e203e81-8e4b-4f30-b2ab-78b5bf790f06" />
+              <option name="message" value="Created" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;media_id&quot;:1,&quot;message&quot;:&quot;Media added successfully&quot;}&#10;" />
+              <option name="size" value="52" />
+              <option name="time" value="4915" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1726130483761" />
+          <option name="id" value="b9270348-5047-4f7f-8428-924c6c083795" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="file" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\OneDrive\Pictures\o4vraah2gbw71.jpg" />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="multipart/form-data" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="4355dbd4-5777-4c71-8db8-cfa9f50d6ab6" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:5000/products/3" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9ZW4+Cjx0aXRsZT41MDAgSW50ZXJuYWwgU2VydmVyIEVycm9yPC90aXRsZT4KPGgxPkludGVybmFsIFNlcnZlciBFcnJvcjwvaDE+CjxwPlRoZSBzZXJ2ZXIgZW5jb3VudGVyZWQgYW4gaW50ZXJuYWwgZXJyb3IgYW5kIHdhcyB1bmFibGUgdG8gY29tcGxldGUgeW91ciByZXF1ZXN0LiBFaXRoZXIgdGhlIHNlcnZlciBpcyBvdmVybG9hZGVkIG9yIHRoZXJlIGlzIGFuIGVycm9yIGluIHRoZSBhcHBsaWNhdGlvbi48L3A+Cg==" />
+              <option name="bodyString" value="&lt;!doctype html&gt;&#10;&lt;html lang=en&gt;&#10;&lt;title&gt;500 Internal Server Error&lt;/title&gt;&#10;&lt;h1&gt;Internal Server Error&lt;/h1&gt;&#10;&lt;p&gt;The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.&lt;/p&gt;&#10;" />
+              <option name="code" value="500" />
+              <option name="contentType" value="text/html; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Server" />
+                    <option name="value" value="Werkzeug/3.0.4 Python/3.12.6" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Thu, 12 Sep 2024 08:41:23 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="text/html; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="265" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="close" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="b9270348-5047-4f7f-8428-924c6c083795" />
+              <option name="message" value="Internal Server Error" />
+              <option name="prettyResponseType" value="HTML" />
+              <option name="previewType" value="HTML" />
+              <option name="rawBodyString" value="&lt;!doctype html&gt;&#10;&lt;html lang=en&gt;&#10;&lt;title&gt;500 Internal Server Error&lt;/title&gt;&#10;&lt;h1&gt;Internal Server Error&lt;/h1&gt;&#10;&lt;p&gt;The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.&lt;/p&gt;&#10;" />
+              <option name="size" value="265" />
+              <option name="time" value="589" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1726130521630" />
+          <option name="id" value="010780c9-97ff-4b0e-8e80-58b422340128" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="file" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\OneDrive\Pictures\o4vraah2gbw71.jpg" />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="multipart/form-data" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="4355dbd4-5777-4c71-8db8-cfa9f50d6ab6" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:5000/products/3" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9ZW4+Cjx0aXRsZT41MDAgSW50ZXJuYWwgU2VydmVyIEVycm9yPC90aXRsZT4KPGgxPkludGVybmFsIFNlcnZlciBFcnJvcjwvaDE+CjxwPlRoZSBzZXJ2ZXIgZW5jb3VudGVyZWQgYW4gaW50ZXJuYWwgZXJyb3IgYW5kIHdhcyB1bmFibGUgdG8gY29tcGxldGUgeW91ciByZXF1ZXN0LiBFaXRoZXIgdGhlIHNlcnZlciBpcyBvdmVybG9hZGVkIG9yIHRoZXJlIGlzIGFuIGVycm9yIGluIHRoZSBhcHBsaWNhdGlvbi48L3A+Cg==" />
+              <option name="bodyString" value="&lt;!doctype html&gt;&#10;&lt;html lang=en&gt;&#10;&lt;title&gt;500 Internal Server Error&lt;/title&gt;&#10;&lt;h1&gt;Internal Server Error&lt;/h1&gt;&#10;&lt;p&gt;The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.&lt;/p&gt;&#10;" />
+              <option name="code" value="500" />
+              <option name="contentType" value="text/html; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Server" />
+                    <option name="value" value="Werkzeug/3.0.4 Python/3.12.6" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Thu, 12 Sep 2024 08:42:01 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="text/html; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="265" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="close" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="010780c9-97ff-4b0e-8e80-58b422340128" />
+              <option name="message" value="Internal Server Error" />
+              <option name="prettyResponseType" value="HTML" />
+              <option name="previewType" value="HTML" />
+              <option name="rawBodyString" value="&lt;!doctype html&gt;&#10;&lt;html lang=en&gt;&#10;&lt;title&gt;500 Internal Server Error&lt;/title&gt;&#10;&lt;h1&gt;Internal Server Error&lt;/h1&gt;&#10;&lt;p&gt;The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.&lt;/p&gt;&#10;" />
+              <option name="size" value="265" />
+              <option name="time" value="4077" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1726130565489" />
+          <option name="id" value="c3cfa9a6-d58e-411e-816f-fc8bc53652b7" />
+          <option name="request">
+            <requestState>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="multipart/form-data" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="4355dbd4-5777-4c71-8db8-cfa9f50d6ab6" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:5000/products/3" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9ZW4+Cjx0aXRsZT41MDAgSW50ZXJuYWwgU2VydmVyIEVycm9yPC90aXRsZT4KPGgxPkludGVybmFsIFNlcnZlciBFcnJvcjwvaDE+CjxwPlRoZSBzZXJ2ZXIgZW5jb3VudGVyZWQgYW4gaW50ZXJuYWwgZXJyb3IgYW5kIHdhcyB1bmFibGUgdG8gY29tcGxldGUgeW91ciByZXF1ZXN0LiBFaXRoZXIgdGhlIHNlcnZlciBpcyBvdmVybG9hZGVkIG9yIHRoZXJlIGlzIGFuIGVycm9yIGluIHRoZSBhcHBsaWNhdGlvbi48L3A+Cg==" />
+              <option name="bodyString" value="&lt;!doctype html&gt;&#10;&lt;html lang=en&gt;&#10;&lt;title&gt;500 Internal Server Error&lt;/title&gt;&#10;&lt;h1&gt;Internal Server Error&lt;/h1&gt;&#10;&lt;p&gt;The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.&lt;/p&gt;&#10;" />
+              <option name="code" value="500" />
+              <option name="contentType" value="text/html; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Server" />
+                    <option name="value" value="Werkzeug/3.0.4 Python/3.12.6" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Thu, 12 Sep 2024 08:42:45 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="text/html; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="265" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="close" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="c3cfa9a6-d58e-411e-816f-fc8bc53652b7" />
+              <option name="message" value="Internal Server Error" />
+              <option name="prettyResponseType" value="HTML" />
+              <option name="previewType" value="HTML" />
+              <option name="rawBodyString" value="&lt;!doctype html&gt;&#10;&lt;html lang=en&gt;&#10;&lt;title&gt;500 Internal Server Error&lt;/title&gt;&#10;&lt;h1&gt;Internal Server Error&lt;/h1&gt;&#10;&lt;p&gt;The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.&lt;/p&gt;&#10;" />
+              <option name="size" value="265" />
+              <option name="time" value="593" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1726130641742" />
+          <option name="id" value="9de926cd-b0bc-4f7d-856a-39f3911c3865" />
+          <option name="request">
+            <requestState>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="multipart/form-data" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="4355dbd4-5777-4c71-8db8-cfa9f50d6ab6" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:5000/products/3" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJjcmVhdGVkX2F0IjoiV2VkLCAxMSBTZXAgMjAyNCAwNzozNjo0NCBHTVQiLCJkZXNjcmlwdGlvbiI6ImhhIGhhIiwiaWQiOjMsIm1lZGlhIjpbeyJpZCI6MSwibWVkaWFfdHlwZSI6ImltYWdlIiwidXJsIjoiRDovYnJhbmRib3gvYnJhbmRib3gvYXBwL21lZGlhXFxvNHZyYWFoMmdidzcxLmpwZyJ9XSwibmFtZSI6Im1lIiwicHJpY2UiOiIxOTkuMDAiLCJ1cGRhdGVkX2F0IjoiV2VkLCAxMSBTZXAgMjAyNCAwNzozNjo0NCBHTVQifQo=" />
+              <option name="bodyString" value="{&#10;  &quot;created_at&quot;: &quot;Wed, 11 Sep 2024 07:36:44 GMT&quot;,&#10;  &quot;description&quot;: &quot;ha ha&quot;,&#10;  &quot;id&quot;: 3,&#10;  &quot;media&quot;: [&#10;    {&#10;      &quot;id&quot;: 1,&#10;      &quot;media_type&quot;: &quot;image&quot;,&#10;      &quot;url&quot;: &quot;D:/brandbox/brandbox/app/media\\o4vraah2gbw71.jpg&quot;&#10;    }&#10;  ],&#10;  &quot;name&quot;: &quot;me&quot;,&#10;  &quot;price&quot;: &quot;199.00&quot;,&#10;  &quot;updated_at&quot;: &quot;Wed, 11 Sep 2024 07:36:44 GMT&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Server" />
+                    <option name="value" value="Werkzeug/3.0.4 Python/3.12.6" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Thu, 12 Sep 2024 08:44:01 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="248" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="close" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="9de926cd-b0bc-4f7d-856a-39f3911c3865" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;created_at&quot;:&quot;Wed, 11 Sep 2024 07:36:44 GMT&quot;,&quot;description&quot;:&quot;ha ha&quot;,&quot;id&quot;:3,&quot;media&quot;:[{&quot;id&quot;:1,&quot;media_type&quot;:&quot;image&quot;,&quot;url&quot;:&quot;D:/brandbox/brandbox/app/media\\o4vraah2gbw71.jpg&quot;}],&quot;name&quot;:&quot;me&quot;,&quot;price&quot;:&quot;199.00&quot;,&quot;updated_at&quot;:&quot;Wed, 11 Sep 2024 07:36:44 GMT&quot;}&#10;" />
+              <option name="size" value="248" />
+              <option name="time" value="8969" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+      </list>
+    </option>
+  </component>
+</project>

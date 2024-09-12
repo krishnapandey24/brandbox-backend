@@ -5,9 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1852af28-fa51-4ca4-89df-428632e77453" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/JetClient/history.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/JetClient/settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/JetClient/state.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/admin_routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin_routes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app_routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/app_routes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +45,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///JetClient Request Console" root0="SKIP_INSPECTION" />
+    <setting file="mock:///JetClient Request Console" root0="SKIP_INSPECTION" />
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/PyCharm2024.2/tmp/jetclient/scripts/99ebc56/Draft_pre-request_4355dbd4.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/.venv/Lib/site-packages/flask_sqlalchemy/extension.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectColorInfo">{
@@ -56,12 +68,13 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/krish/OneDrive/Pictures/o4vraah2gbw71.jpg",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "io.jetclient.pL",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -78,7 +91,7 @@
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
       <option name="SDK_NAME" value="Python 3.9 (brandbox)" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -106,7 +119,18 @@
       <workItem from="1725882353809" duration="43000" />
       <workItem from="1725882419510" duration="2696000" />
       <workItem from="1725885801248" duration="2521000" />
-      <workItem from="1725897616847" duration="4719000" />
+      <workItem from="1725897616847" duration="5403000" />
+      <workItem from="1725947179411" duration="856000" />
+      <workItem from="1725948759002" duration="1082000" />
+      <workItem from="1725974349947" duration="1200000" />
+      <workItem from="1726034865950" duration="132000" />
+      <workItem from="1726035010839" duration="612000" />
+      <workItem from="1726035645168" duration="2908000" />
+      <workItem from="1726039543087" duration="4284000" />
+      <workItem from="1726124327578" duration="502000" />
+      <workItem from="1726124924881" duration="57000" />
+      <workItem from="1726125302120" duration="1187000" />
+      <workItem from="1726127589806" duration="3000000" />
     </task>
     <servers />
   </component>
@@ -114,6 +138,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/brandbox$Flask.coverage" NAME="Flask Coverage Results" MODIFIED="1725946240004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/brandbox$Flask.coverage" NAME="Flask Coverage Results" MODIFIED="1726130593607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

@@ -33,12 +33,13 @@ class Category(db.Model):
     category_name = db.Column(db.String(100), nullable=False, unique=True)
     description = db.Column(db.Text, nullable=True)
 
-    products_in_category = db.relationship('Product', backref='category_ref', lazy=True)
+    # A single category can have many products
+    products = db.relationship('Product', backref='category', lazy=True)
+
 
 class Product(db.Model):
     __tablename__ = 'products'
     product_id = db.Column(db.Integer, primary_key=True)
-    category_id = db.Column(db.Integer, db.ForeignKey('categories.category_id'), nullable=False)
     product_name = db.Column(db.String(255), nullable=False)
     description = db.Column(db.Text, nullable=True)
     price = db.Column(db.Numeric(10, 2), nullable=False)
@@ -46,7 +47,8 @@ class Product(db.Model):
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
     updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
-    category = db.relationship('Category', backref=db.backref('products', lazy=True))
+    # ForeignKey to link Product to a Category
+    category_id = db.Column(db.Integer, db.ForeignKey('categories.category_id'), nullable=False)
 
 class Order(db.Model):
     __tablename__ = 'orders'
@@ -113,7 +115,7 @@ class Media(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     product_id = db.Column(db.Integer, db.ForeignKey('products.product_id'), nullable=False)
     media_type = db.Column(db.Enum('image', 'video'), nullable=False)
-    url = db.Column(db.String(255), nullable=False)
+    name = db.Column(db.String(244), nullable=False)
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
 
     product = db.relationship('Product', backref=db.backref('media', lazy=True))
