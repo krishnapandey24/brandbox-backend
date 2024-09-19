@@ -16,9 +16,11 @@ def create_app():
 
     # Import routes
     from .app_routes import main
+    from .admin_routes import admin
     app.register_blueprint(main)
+    app.register_blueprint(admin)
 
-    # # Create tables within the application context
+    # Create tables within the application context
     # with app.app_context():
     #     db.create_all()
 

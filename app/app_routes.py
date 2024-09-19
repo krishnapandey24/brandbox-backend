@@ -1,11 +1,13 @@
+from datetime import datetime
+
+from MySQLdb import IntegrityError
 from flask import Blueprint
+from flask import request, jsonify
 from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity
 
-from . import Config
-from .models import User, Product, Order, OrderItem, db, Media, Category
+from .models import User, Product, Order, OrderItem, db, Media, Variant, CartItem, Cart, Saved, SavedItem
 
 main = Blueprint('main', __name__)
-
 
 
 @main.route('/')
@@ -33,8 +35,8 @@ def login():
     return jsonify(access_token=access_token, user={'email': user.email, 'name': user.name}), 200
 
 
-@main.route('/products', methods=['GET'])
-def get_products():
+@main.route('/all_products', methods=['GET'])
+def get_all_products():
     products = Product.query.all()
     result = [
         {
@@ -47,6 +49,101 @@ def get_products():
     ]
     return jsonify(result)
 
+
+@main.route('/products', methods=['GET'])
+def get_products():
+    # Get query parameters
+    category_id = request.args.get('category_id', type=int)
+    page = request.args.get('page', 1, type=int)
+    per_page = request.args.get('per_page', 10, type=int)
+    sort_by = request.args.get('sort_by', 'created_at')  # Default to 'created_at'
+    sort_order = request.args.get('sort_order', 'asc')  # Default to ascending (asc)
+    include_out_of_stock = request.args.get('include_out_of_stock', 'false').lower() == 'true'  # Default to exclude out-of-stock items
+    feature_type = request.args.get('feature_type')  # If feature_type is provided
+    gender = request.args.get('gender')
+
+    # Map allowed fields for sorting
+    sortable_fields = {
+        'sales': Product.sales,
+        'price': Product.price,
+        'total_reviews': Product.total_reviews,
+        'created_at': Product.created_at
+    }
+
+    # Validate sort_by field
+    if sort_by not in sortable_fields:
+        return jsonify({'error': 'Invalid sort field'}), 400
+
+    # Set the sorting order (asc or desc)
+    sort_func = sortable_fields[sort_by].desc() if sort_order == 'desc' else sortable_fields[sort_by].asc()
+
+    # Base query for products
+    query = Product.query.order_by(sort_func)
+
+    # Filter by category if category_id is provided
+    if category_id:
+        query = query.filter_by(category_id=category_id)
+
+    # Exclude products with 0 stock_quantity if include_out_of_stock is False
+    if not include_out_of_stock:
+        query = query.filter(Product.stock_quantity > 0)
+
+    # Filter by feature_type if it's provided
+    if feature_type:
+        query = query.filter_by(feature_type=feature_type)
+
+    if gender:
+        query = query.filter(Product.gender == gender)
+
+    # Paginate the query
+    paginated_products = query.paginate(page=page, per_page=per_page, error_out=False)
+
+    # Build the result list with all product details
+    result = []
+    for product in paginated_products.items:
+        # Fetch the first media for the product
+        first_media = Media.query.filter_by(product_id=product.product_id).order_by(Media.created_at).first()
+        media_url = first_media.name if first_media else None  # Get the name or None if no media
+
+        # Fetch variants for the product
+        variants = Variant.query.filter_by(product_id=product.product_id).all()
+        variant_list = []
+        for variant in variants:
+            # Fetch the first media for each variant
+            first_variant_media = Media.query.filter_by(variant_id=variant.variant_id).order_by(Media.created_at).first()
+            variant_media_url = first_variant_media.name if first_variant_media else None
+
+            variant_dict = {
+                column.name: getattr(variant, column.name) for column in variant.__table__.columns
+            }
+            variant_dict['media'] = variant_media_url
+
+            variant_list.append(variant_dict)
+
+        # Build product dictionary
+        product_dict = {
+            column.name: getattr(product, column.name) for column in product.__table__.columns
+        }
+
+        avg_rating = None
+        if product.total_reviews > 0:
+            avg_rating = product.current_rating_sum / product.total_reviews
+
+        product_dict['media'] = media_url
+        product_dict['average_rating'] = avg_rating
+        product_dict['variants'] = variant_list
+
+        result.append(product_dict)
+
+    # Return the paginated response
+    return jsonify({
+        'products': result,
+        'page': paginated_products.page,
+        'total_pages': paginated_products.pages,
+        'total_products': paginated_products.total,
+        'has_next': paginated_products.has_next,
+        'has_prev': paginated_products.has_prev
+    })
 
 @main.route('/register', methods=['POST'])
 def register():
@@ -74,6 +171,7 @@ def register():
     db.session.add(new_user)
     db.session.commit()
 
+
     return jsonify({"message": "User registered successfully"}), 201
 
 
@@ -82,22 +180,21 @@ def register():
 def verify():
     current_user_id = get_jwt_identity()
     data = request.json
-    user_id= data.get('user_id')
+    user_id = data.get('user_id')
     if current_user_id != user_id:
         return jsonify({"message": current_user_id}), 401
     else:
         return jsonify({"message": "Authorized"}), 200
 
 
-
 @main.route('/orders', methods=['POST'])
 def place_order():
     current_user_id = get_jwt_identity()
     data = request.get_json()
-    user_id= data.get('user_id')
+    user_id = data.get('user_id')
 
     if current_user_id != user_id:
-      return jsonify({"message": "You are not authorized"}), 401
+        return jsonify({"message": "You are not authorized"}), 401
 
     new_order = Order(user_id=user_id, total_amount=data['total_amount'])
     db.session.add(new_order)
@@ -144,107 +241,141 @@ def get_product_details(product_id):
 
     return jsonify(product_data), 200
 
-
-@main.route('/products', methods=['POST'])
-def add_product():
-    data = request.json
-
-    # Extract data from request
-    name = data.get('name')
-    description = data.get('description')
-    price = data.get('price')
-    stock_quantity = data.get('stock_quantity')
-    category_id = data.get('category_id')
-
-    if not name or not price or not stock_quantity or not category_id:
-        return jsonify({"message": "Missing required fields"}), 400
-
-    new_product = Product(
-        product_name=name,
-        description=description,
-        price=price,
-        stock_quantity=stock_quantity,
-        category_id=category_id
+@main.route('/cart/<int:user_id>', methods=['GET'])
+def get_cart_items(user_id):
+    # Query the cart items for the given user_id
+    cart_items = (
+        CartItem.query
+        .join(Cart, Cart.cart_id == CartItem.cart_id)
+        .join(Product, Product.product_id == CartItem.product_id)
+        .filter(Cart.user_id == user_id)
+        .all()
     )
 
-    # Add and commit to the database
-    db.session.add(new_product)
-    db.session.commit()
+    # Initialize response variables
+    items_data = []
+    total_price = 0
+    total_items = len(cart_items)
 
-    return jsonify({"message": "Product added successfully", "product_id": new_product.product_id}), 201
+    # Process each cart item
+    for item in cart_items:
+        product = Product.query.filter_by(product_id=item.product_id).first()
+
+        # Get product variants if applicable
+        variants = Variant.query.filter_by(product_id=product.product_id).all()
+
+        # Check if the product has a variant and load the correct media
+        if item.variant_id:
+            media = Media.query.filter_by(variant_id=item.variant_id).all()
+        else:
+            media = Media.query.filter_by(product_id=item.product_id).all()
+
+        # Collect media URLs
+        media_urls = [m.url for m in media]  # Assuming `url` is a column in Media
+
+        # Calculate subtotal for this item
+        subtotal = item.price_at_added * item.quantity
+        total_price += subtotal
+
+        # Append item data to response
+        items_data.append({
+            'cart_item_id': item.cart_item_id,
+            'product_id': product.product_id,
+            'product_name': product.product_name,
+            'quantity': item.quantity,
+            'price_at_added': item.price_at_added,
+            'subtotal': subtotal,
+            'variant_id': item.variant_id,
+            'media': media_urls,
+            'variants': [{'variant_id': v.variant_id, 'size': v.size, 'color': v.color} for v in variants]
+        })
+
+    # Final response with items and cart totals
+    return jsonify({
+        'cart_items': items_data,
+        'total_price': total_price,
+        'total_items': total_items
+    }), 200
 
 
-from flask import request, jsonify
-from werkzeug.utils import secure_filename
-import os
+@main.route('/cart/add', methods=['POST'])
+def add_product_to_cart():
+    user_id = request.json.get('user_id')
+    product_id = request.json.get('product_id')
+    variant_id = request.json.get('variant_id', None)  # Optional
+    quantity = request.json.get('quantity', 1)  # Default is 1
 
-@main.route('/products/<int:product_id>/media', methods=['POST'])
-def add_media(product_id):
+    # Check if user ID and product ID are provided
+    if not user_id or not product_id:
+        return jsonify({'error': 'user_id and product_id are required'}), 400
+
+    # Fetch or create a new cart for the user
+    cart = Cart.query.filter_by(user_id=user_id).first()
+    if not cart:
+        # If the cart doesn't exist, create a new one
+        cart = Cart(user_id=user_id, created_at=datetime.now())
+        db.session.add(cart)
+        db.session.commit()
+
     # Check if the product exists
     product = Product.query.get(product_id)
     if not product:
-        return jsonify({"message": "Product not found"}), 404
+        return jsonify({'error': 'Product does not exist'}), 404
 
-    # Check if a file was uploaded
-    if 'file' not in request.files:
-        return jsonify({"message": "No file part"}), 400
+    # Check if the variant exists (if variant_id is provided)
+    if variant_id:
+        variant = Variant.query.get(variant_id)
+        if not variant:
+            return jsonify({'error': 'Variant does not exist'}), 404
 
-    file = request.files['file']
+    # Calculate the subtotal (you can replace this with your actual logic)
+    # For simplicity, assume we have a price field in the Product model
+    price = product.price  # Assuming variant has a price field
+    subtotal = price * quantity
 
-    if file.filename == '':
-        return jsonify({"message": "No selected file"}), 400
-
-    # Validate file type (ensure it's either audio or video)
-    is_image=file.content_type.startswith('image/')
-    is_video=file.content_type.startswith('video/')
-    if file and (is_image or is_video):
-        # Save the file
-        filename = secure_filename(file.filename)
-        file_path = os.path.join(Config.MEDIA_FOLDER, filename)
-        file.save(file_path)
-
-        # Create new media record
-        new_media = Media(
+    # Add the product to the cart items (or update if already exists)
+    cart_item = CartItem.query.filter_by(cart_id=cart.cart_id, product_id=product_id, variant_id=variant_id).first()
+    if cart_item:
+        # If the item already exists in the cart, update the quantity and subtotal
+        cart_item.quantity += quantity
+        cart_item.subtotal += subtotal
+    else:
+        # If the item does not exist, create a new cart item
+        cart_item = CartItem(
+            cart_id=cart.cart_id,
             product_id=product_id,
-            media_type="image" if is_image else "video" ,
-            name=filename  # Save the path or URL of the file
+            variant_id=variant_id,
+            quantity=quantity,
+            subtotal=subtotal
         )
-
-        # Add and commit to the database
-        db.session.add(new_media)
-        db.session.commit()
-
-        return jsonify({"message": "Media added successfully", "media_id": new_media.id}), 201
-
-    return jsonify({"message": "Invalid file type"}), 400
-
-
-@main.route('/category', methods=['POST'])
-def create_category():
-    data = request.get_json()
-
-    # Validate the incoming request
-    if not data or 'category_name' not in data:
-        return jsonify({"error": "Category name is required"}), 400
-
-    # Check if the category already exists
-    existing_category = Category.query.filter_by(category_name=data['category_name']).first()
-    if existing_category:
-        return jsonify({"error": "Category already exists"}), 400
-
-    # Create a new category
-    new_category = Category(
-        category_name=data['category_name'],
-        description=data.get('description')  # Optional field
-    )
+        db.session.add(cart_item)
 
     try:
-        # Add and commit to the database
-        db.session.add(new_category)
+        db.session.commit()
+        return jsonify({'message': 'Product added to cart successfully'}), 201
+    except IntegrityError:
+        db.session.rollback()
+        return jsonify({'error': 'Failed to add product to cart'}), 500
+
+
+@main.route('/add_to_wishlist', methods=['POST'])
+def add_to_wishlist():
+    user_id = request.json.get('user_id')
+    product_id = request.json.get('product_id')
+    variant_id = request.json.get('variant_id', None)
+
+    # Check if a saved list exists for the user, create if not
+    saved = Saved.query.filter_by(user_id=user_id).first()
+    if not saved:
+        saved = Saved(user_id=user_id)
+        db.session.add(saved)
         db.session.commit()
 
-        return jsonify({"message": "Category created successfully", "category_id": new_category.category_id}), 201
+    # Add item to saved items
+    saved_item = SavedItem.query.filter_by(saved_id=saved.saved_id, product_id=product_id, variant_id=variant_id).first()
+    if not saved_item:
+        saved_item = SavedItem(saved_id=saved.saved_id, product_id=product_id, variant_id=variant_id)
+        db.session.add(saved_item)
+        db.session.commit()
 
-    except Exception as e:
-        db.session.rollback()
-        return jsonify({"error": str(e)}), 500
+    return jsonify({'message': 'Item added to wishlist successfully'}), 201
