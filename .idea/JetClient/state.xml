@@ -8,22 +8,96 @@
             <requestState>
               <option name="body">
                 <bodyState>
-                  <option name="raw" value="{&#10;           &quot;product_name&quot;: &quot;Example Product&quot;,&#10;           &quot;description&quot;: &quot;This is an example product.&quot;,&#10;           &quot;price&quot;: 19.99,&#10;           &quot;fake_price&quot;: 25.00,&#10;           &quot;stock_quantity&quot;: 100,&#10;           &quot;sales&quot;: 10,&#10;           &quot;current_rating_sum&quot;: 4.5,&#10;           &quot;total_reviews&quot;: 25,&#10;           &quot;feature_type&quot;: &quot;featured&quot;,&#10;           &quot;gender&quot;: &quot;both&quot;,&#10;           &quot;category_id&quot;: 1,&#10;           &quot;variants&quot;: [&#10;             {&#10;               &quot;size&quot;: &quot;M&quot;,&#10;               &quot;color_id&quot;: 2,&#10;               &quot;stock_quantity&quot;: 50,&#10;               &quot;media&quot;: [&#10;                 {&#10;                   &quot;media_type&quot;: &quot;image&quot;,&#10;                   &quot;name&quot;: &quot;variant1_image1.jpg&quot;&#10;                 },&#10;                 {&#10;                   &quot;media_type&quot;: &quot;video&quot;,&#10;                   &quot;name&quot;: &quot;variant1_video1.mp4&quot;&#10;                 }&#10;               ]&#10;             },&#10;             {&#10;               &quot;size&quot;: &quot;L&quot;,&#10;               &quot;color_id&quot;: 3,&#10;               &quot;stock_quantity&quot;: 30,&#10;               &quot;media&quot;: [&#10;                 {&#10;                   &quot;media_type&quot;: &quot;image&quot;,&#10;                   &quot;name&quot;: &quot;variant2_image1.jpg&quot;&#10;                 }&#10;               ]&#10;             }&#10;           ],&#10;           &quot;media&quot;: [&#10;             {&#10;               &quot;media_type&quot;: &quot;image&quot;,&#10;               &quot;name&quot;: &quot;product_image1.jpg&quot;&#10;             },&#10;             {&#10;               &quot;media_type&quot;: &quot;video&quot;,&#10;               &quot;name&quot;: &quot;product_video1.mp4&quot;&#10;             }&#10;           ]&#10;         }" />
-                  <option name="type" value="JSON" />
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="product_name" />
+                        <option name="value" value="Sample Product" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="description" />
+                        <option name="value" value="This is a sample product description." />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="price" />
+                        <option name="value" value="19.99" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="fake_price" />
+                        <option name="value" value="25.00" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="stock_quantity" />
+                        <option name="value" value="100" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="sales" />
+                        <option name="value" value="10" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="current_rating_sum" />
+                        <option name="value" value="4.5" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="total_reviews" />
+                        <option name="value" value="50" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="feature_type" />
+                        <option name="value" value="basic" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="gender" />
+                        <option name="value" value="both" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="category_id" />
+                        <option name="value" value="1" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="media" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\Downloads\Screenshot 2024-09-19 150408.png" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="media" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\Downloads\Screenshot 2024-09-19 150434.png" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variants[0][size]" />
+                        <option name="value" value="M" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variants[0][color_id]" />
+                        <option name="value" value="2" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variants[0][stock_quantity]" />
+                        <option name="value" value="50" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variant_1_media" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\Downloads\Screenshot 2024-09-19 150828.png" />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
                 </bodyState>
               </option>
               <option name="headers">
                 <list>
                   <headerState>
                     <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
+                    <option name="value" value="multipart/form-data" />
                   </headerState>
                 </list>
               </option>
               <option name="id" value="4355dbd4-5777-4c71-8db8-cfa9f50d6ab6" />
-              <option name="method" value="GET" />
+              <option name="method" value="POST" />
               <option name="name" value="Draft" />
-              <option name="url" value="http://localhost:5000/products" />
+              <option name="url" value="http://localhost:5000/add_product" />
             </requestState>
           </list>
         </option>

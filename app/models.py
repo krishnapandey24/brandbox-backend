@@ -45,7 +45,7 @@ class Product(db.Model):
     description = db.Column(db.Text, nullable=True)
     price = db.Column(db.Numeric(10, 2), nullable=False)
     fake_price = db.Column(db.Numeric(10, 2), nullable=False)
-    stock_quantity = db.Column(db.Integer, nullable=False)
+    stock_quantity = db.Column(db.Integer, nullable=True)
     sales = db.Column(db.Integer, default=0)
     current_rating_sum = db.Column(db.Float, default=0.0)
     total_reviews = db.Column(db.Integer, default=0)

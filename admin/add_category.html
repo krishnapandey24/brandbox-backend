@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Category</title>
+</head>
+<body>
+<h1>Create a New Category</h1>
+<form id="create-category-form">
+  <label for="category_name">Category Name:</label><br>
+  <input type="text" id="category_name" name="category_name" required><br><br>
+
+  <label for="description">Description (Optional):</label><br>
+  <textarea id="description" name="description"></textarea><br><br>
+
+  <button type="submit">Create Category</button>
+</form>
+
+<p id="response-message"></p>
+
+<script>
+  document.getElementById('create-category-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    const categoryData = {
+      category_name: document.getElementById('category_name').value,
+      description: document.getElementById('description').value
+    };
+
+    fetch('https://brandbox.pythonanywhere.com/category', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(categoryData)
+    })
+            .then(response => response.json())
+            .then(data => {
+              const message = data.message ? data.message : data.error;
+              document.getElementById('response-message').textContent = message;
+            })
+            .catch(error => {
+              document.getElementById('response-message').textContent = 'An error occurred: ' + error;
+            });
+  });
+</script>
+</body>
+</html>
