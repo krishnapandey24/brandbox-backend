@@ -4,3 +4,5 @@ class Config:
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     JWT_SECRET_KEY="hello"
     MEDIA_FOLDER="D:/brandbox/brandbox/app/media"
+
+

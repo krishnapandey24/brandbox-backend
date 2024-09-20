@@ -4,461 +4,6 @@
     <option name="requestHistoryStates">
       <list>
         <requestHistoryState>
-          <option name="dateTime" value="1726734969539" />
-          <option name="id" value="91f11a66-857d-404e-8c8c-3f7e395f5048" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;user_id&quot;: 1,&#10;  &quot;product_id&quot;: 101,&#10;  &quot;variant_id&quot;: 10,&#10;  &quot;quantity&quot;: 2&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="4355dbd4-5777-4c71-8db8-cfa9f50d6ab6" />
-              <option name="method" value="POST" />
-              <option name="name" value="Draft" />
-              <option name="url" value="http://localhost:5000/cart/add" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJlcnJvciI6IlByb2R1Y3QgZG9lcyBub3QgZXhpc3QifQo=" />
-              <option name="bodyString" value="{&#10;  &quot;error&quot;: &quot;Product does not exist&quot;&#10;}" />
-              <option name="code" value="404" />
-              <option name="contentType" value="application/json" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Server" />
-                    <option name="value" value="Werkzeug/3.0.4 Python/3.12.6" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Thu, 19 Sep 2024 08:36:09 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="35" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="close" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="91f11a66-857d-404e-8c8c-3f7e395f5048" />
-              <option name="message" value="Not Found" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;error&quot;:&quot;Product does not exist&quot;}&#10;" />
-              <option name="size" value="35" />
-              <option name="time" value="1289" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="drafts" />
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1726734987140" />
-          <option name="id" value="39b6d931-963f-4f16-8391-2aa9e88bfd6f" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;user_id&quot;: 1,&#10;  &quot;product_id&quot;: 2,&#10;  &quot;variant_id&quot;: 10,&#10;  &quot;quantity&quot;: 2&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="4355dbd4-5777-4c71-8db8-cfa9f50d6ab6" />
-              <option name="method" value="POST" />
-              <option name="name" value="Draft" />
-              <option name="url" value="http://localhost:5000/cart/add" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJlcnJvciI6IlZhcmlhbnQgZG9lcyBub3QgZXhpc3QifQo=" />
-              <option name="bodyString" value="{&#10;  &quot;error&quot;: &quot;Variant does not exist&quot;&#10;}" />
-              <option name="code" value="404" />
-              <option name="contentType" value="application/json" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Server" />
-                    <option name="value" value="Werkzeug/3.0.4 Python/3.12.6" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Thu, 19 Sep 2024 08:36:27 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="35" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="close" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="39b6d931-963f-4f16-8391-2aa9e88bfd6f" />
-              <option name="message" value="Not Found" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;error&quot;:&quot;Variant does not exist&quot;}&#10;" />
-              <option name="size" value="35" />
-              <option name="time" value="1717" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="drafts" />
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1726734998083" />
-          <option name="id" value="339df6e7-a91e-4223-bf4e-c3ad78afd883" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;user_id&quot;: 1,&#10;  &quot;product_id&quot;: 2,&#10;  &quot;quantity&quot;: 2&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="4355dbd4-5777-4c71-8db8-cfa9f50d6ab6" />
-              <option name="method" value="POST" />
-              <option name="name" value="Draft" />
-              <option name="url" value="http://localhost:5000/cart/add" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZHVjdCBhZGRlZCB0byBjYXJ0IHN1Y2Nlc3NmdWxseSJ9Cg==" />
-              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Product added to cart successfully&quot;&#10;}" />
-              <option name="code" value="201" />
-              <option name="contentType" value="application/json" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Server" />
-                    <option name="value" value="Werkzeug/3.0.4 Python/3.12.6" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Thu, 19 Sep 2024 08:36:38 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="49" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="close" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="339df6e7-a91e-4223-bf4e-c3ad78afd883" />
-              <option name="message" value="Created" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Product added to cart successfully&quot;}&#10;" />
-              <option name="size" value="49" />
-              <option name="time" value="3237" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="drafts" />
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1726735367901" />
-          <option name="id" value="86713499-92f8-449e-a8c0-72b27b98b518" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;user_id&quot;: 1,&#10;  &quot;product_id&quot;: 2,&#10;  &quot;variant_id&quot;: 2,&#10;  &quot;quantity&quot;: 2&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="4355dbd4-5777-4c71-8db8-cfa9f50d6ab6" />
-              <option name="method" value="POST" />
-              <option name="name" value="Draft" />
-              <option name="url" value="http://localhost:5000/cart/add" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZHVjdCBhZGRlZCB0byBjYXJ0IHN1Y2Nlc3NmdWxseSJ9Cg==" />
-              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Product added to cart successfully&quot;&#10;}" />
-              <option name="code" value="201" />
-              <option name="contentType" value="application/json" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Server" />
-                    <option name="value" value="Werkzeug/3.0.4 Python/3.12.6" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Thu, 19 Sep 2024 08:42:47 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="49" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="close" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="86713499-92f8-449e-a8c0-72b27b98b518" />
-              <option name="message" value="Created" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Product added to cart successfully&quot;}&#10;" />
-              <option name="size" value="49" />
-              <option name="time" value="1129" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="drafts" />
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1726735382768" />
-          <option name="id" value="d04484cb-a200-48a1-a875-55abe9710dfe" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;user_id&quot;: 1,&#10;  &quot;product_id&quot;: 2,&#10;  &quot;variant_id&quot;: 2,&#10;  &quot;quantity&quot;: 2&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="4355dbd4-5777-4c71-8db8-cfa9f50d6ab6" />
-              <option name="method" value="POST" />
-              <option name="name" value="Draft" />
-              <option name="url" value="http://localhost:5000/cart/add" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZHVjdCBhZGRlZCB0byBjYXJ0IHN1Y2Nlc3NmdWxseSJ9Cg==" />
-              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Product added to cart successfully&quot;&#10;}" />
-              <option name="code" value="201" />
-              <option name="contentType" value="application/json" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Server" />
-                    <option name="value" value="Werkzeug/3.0.4 Python/3.12.6" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Thu, 19 Sep 2024 08:43:02 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="49" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="close" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="d04484cb-a200-48a1-a875-55abe9710dfe" />
-              <option name="message" value="Created" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Product added to cart successfully&quot;}&#10;" />
-              <option name="size" value="49" />
-              <option name="time" value="1188" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="drafts" />
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1726735406610" />
-          <option name="id" value="7991ad2f-9b34-4ad9-bea7-5f55f8449bd6" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;user_id&quot;: 1,&#10;  &quot;product_id&quot;: 2,&#10;  &quot;quantity&quot;: 2&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="4355dbd4-5777-4c71-8db8-cfa9f50d6ab6" />
-              <option name="method" value="POST" />
-              <option name="name" value="Draft" />
-              <option name="url" value="http://localhost:5000/cart/add" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZHVjdCBhZGRlZCB0byBjYXJ0IHN1Y2Nlc3NmdWxseSJ9Cg==" />
-              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Product added to cart successfully&quot;&#10;}" />
-              <option name="code" value="201" />
-              <option name="contentType" value="application/json" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Server" />
-                    <option name="value" value="Werkzeug/3.0.4 Python/3.12.6" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Thu, 19 Sep 2024 08:43:26 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="49" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="close" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="7991ad2f-9b34-4ad9-bea7-5f55f8449bd6" />
-              <option name="message" value="Created" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Product added to cart successfully&quot;}&#10;" />
-              <option name="size" value="49" />
-              <option name="time" value="966" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="drafts" />
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1726735438428" />
-          <option name="id" value="81463a8e-d9b9-4c73-b423-a6ee67d3d244" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;user_id&quot;: 1,&#10;  &quot;product_id&quot;: 2,&#10;  &quot;quantity&quot;: 2&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="4355dbd4-5777-4c71-8db8-cfa9f50d6ab6" />
-              <option name="method" value="POST" />
-              <option name="name" value="Draft" />
-              <option name="url" value="http://localhost:5000/cart/add" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiUHJvZHVjdCBhZGRlZCB0byBjYXJ0IHN1Y2Nlc3NmdWxseSJ9Cg==" />
-              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Product added to cart successfully&quot;&#10;}" />
-              <option name="code" value="201" />
-              <option name="contentType" value="application/json" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Server" />
-                    <option name="value" value="Werkzeug/3.0.4 Python/3.12.6" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Thu, 19 Sep 2024 08:43:58 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="49" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="close" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="81463a8e-d9b9-4c73-b423-a6ee67d3d244" />
-              <option name="message" value="Created" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Product added to cart successfully&quot;}&#10;" />
-              <option name="size" value="49" />
-              <option name="time" value="1056" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="drafts" />
-        </requestHistoryState>
-        <requestHistoryState>
           <option name="dateTime" value="1726737845651" />
           <option name="id" value="996331d2-896a-4bb1-b572-5ba1ff6acc53" />
           <option name="request">
@@ -797,6 +342,990 @@
               <option name="rawBodyString" value="{&quot;message&quot;:&quot;Product added successfully&quot;}&#10;" />
               <option name="size" value="41" />
               <option name="time" value="1902" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1726821786173" />
+          <option name="id" value="9b939063-b89c-44a2-832c-333821b6fe95" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="product_name" />
+                        <option name="value" value="Sample Product" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="description" />
+                        <option name="value" value="This is a sample product description." />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="price" />
+                        <option name="value" value="19.99" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="fake_price" />
+                        <option name="value" value="25.00" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="stock_quantity" />
+                        <option name="value" value="100" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="sales" />
+                        <option name="value" value="10" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="current_rating_sum" />
+                        <option name="value" value="4.5" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="total_reviews" />
+                        <option name="value" value="50" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="feature_type" />
+                        <option name="value" value="basic" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="gender" />
+                        <option name="value" value="both" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="category_id" />
+                        <option name="value" value="1" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="media" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\Downloads\Screenshot 2024-09-19 150408.png" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="media" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\Downloads\Screenshot 2024-09-19 150434.png" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variants[0][size]" />
+                        <option name="value" value="M" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variants[0][color_id]" />
+                        <option name="value" value="2" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variants[0][stock_quantity]" />
+                        <option name="value" value="50" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variant_1_media" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\Downloads\Screenshot 2024-09-19 150828.png" />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="multipart/form-data" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="4355dbd4-5777-4c71-8db8-cfa9f50d6ab6" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:5000/media/(1).jpg" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9ZW4+Cjx0aXRsZT40MDUgTWV0aG9kIE5vdCBBbGxvd2VkPC90aXRsZT4KPGgxPk1ldGhvZCBOb3QgQWxsb3dlZDwvaDE+CjxwPlRoZSBtZXRob2QgaXMgbm90IGFsbG93ZWQgZm9yIHRoZSByZXF1ZXN0ZWQgVVJMLjwvcD4K" />
+              <option name="bodyString" value="&lt;!doctype html&gt;&#10;&lt;html lang=en&gt;&#10;&lt;title&gt;405 Method Not Allowed&lt;/title&gt;&#10;&lt;h1&gt;Method Not Allowed&lt;/h1&gt;&#10;&lt;p&gt;The method is not allowed for the requested URL.&lt;/p&gt;&#10;" />
+              <option name="code" value="405" />
+              <option name="contentType" value="text/html; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Server" />
+                    <option name="value" value="Werkzeug/3.0.4 Python/3.12.6" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Fri, 20 Sep 2024 08:43:06 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="text/html; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Allow" />
+                    <option name="value" value="HEAD, GET, OPTIONS" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="153" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="close" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="9b939063-b89c-44a2-832c-333821b6fe95" />
+              <option name="message" value="Method Not Allowed" />
+              <option name="prettyResponseType" value="HTML" />
+              <option name="previewType" value="HTML" />
+              <option name="rawBodyString" value="&lt;!doctype html&gt;&#10;&lt;html lang=en&gt;&#10;&lt;title&gt;405 Method Not Allowed&lt;/title&gt;&#10;&lt;h1&gt;Method Not Allowed&lt;/h1&gt;&#10;&lt;p&gt;The method is not allowed for the requested URL.&lt;/p&gt;&#10;" />
+              <option name="size" value="153" />
+              <option name="time" value="7" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1726821790370" />
+          <option name="id" value="d6daba81-bc10-4c81-8940-ee75f3860d01" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="product_name" />
+                        <option name="value" value="Sample Product" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="description" />
+                        <option name="value" value="This is a sample product description." />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="price" />
+                        <option name="value" value="19.99" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="fake_price" />
+                        <option name="value" value="25.00" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="stock_quantity" />
+                        <option name="value" value="100" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="sales" />
+                        <option name="value" value="10" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="current_rating_sum" />
+                        <option name="value" value="4.5" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="total_reviews" />
+                        <option name="value" value="50" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="feature_type" />
+                        <option name="value" value="basic" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="gender" />
+                        <option name="value" value="both" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="category_id" />
+                        <option name="value" value="1" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="media" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\Downloads\Screenshot 2024-09-19 150408.png" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="media" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\Downloads\Screenshot 2024-09-19 150434.png" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variants[0][size]" />
+                        <option name="value" value="M" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variants[0][color_id]" />
+                        <option name="value" value="2" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variants[0][stock_quantity]" />
+                        <option name="value" value="50" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variant_1_media" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\Downloads\Screenshot 2024-09-19 150828.png" />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="multipart/form-data" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="4355dbd4-5777-4c71-8db8-cfa9f50d6ab6" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:5000/media/(1).jpg" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9ZW4+Cjx0aXRsZT40MDQgTm90IEZvdW5kPC90aXRsZT4KPGgxPk5vdCBGb3VuZDwvaDE+CjxwPlRoZSByZXF1ZXN0ZWQgVVJMIHdhcyBub3QgZm91bmQgb24gdGhlIHNlcnZlci4gSWYgeW91IGVudGVyZWQgdGhlIFVSTCBtYW51YWxseSBwbGVhc2UgY2hlY2sgeW91ciBzcGVsbGluZyBhbmQgdHJ5IGFnYWluLjwvcD4K" />
+              <option name="bodyString" value="&lt;!doctype html&gt;&#10;&lt;html lang=en&gt;&#10;&lt;title&gt;404 Not Found&lt;/title&gt;&#10;&lt;h1&gt;Not Found&lt;/h1&gt;&#10;&lt;p&gt;The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.&lt;/p&gt;&#10;" />
+              <option name="code" value="404" />
+              <option name="contentType" value="text/html; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Server" />
+                    <option name="value" value="Werkzeug/3.0.4 Python/3.12.6" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Fri, 20 Sep 2024 08:43:10 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="text/html; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="207" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="close" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="d6daba81-bc10-4c81-8940-ee75f3860d01" />
+              <option name="message" value="Not Found" />
+              <option name="prettyResponseType" value="HTML" />
+              <option name="previewType" value="HTML" />
+              <option name="rawBodyString" value="&lt;!doctype html&gt;&#10;&lt;html lang=en&gt;&#10;&lt;title&gt;404 Not Found&lt;/title&gt;&#10;&lt;h1&gt;Not Found&lt;/h1&gt;&#10;&lt;p&gt;The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.&lt;/p&gt;&#10;" />
+              <option name="size" value="207" />
+              <option name="time" value="23" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1726821880606" />
+          <option name="id" value="08182527-786b-4d38-a7a7-53845f9e0752" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="product_name" />
+                        <option name="value" value="Sample Product" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="description" />
+                        <option name="value" value="This is a sample product description." />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="price" />
+                        <option name="value" value="19.99" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="fake_price" />
+                        <option name="value" value="25.00" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="stock_quantity" />
+                        <option name="value" value="100" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="sales" />
+                        <option name="value" value="10" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="current_rating_sum" />
+                        <option name="value" value="4.5" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="total_reviews" />
+                        <option name="value" value="50" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="feature_type" />
+                        <option name="value" value="basic" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="gender" />
+                        <option name="value" value="both" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="category_id" />
+                        <option name="value" value="1" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="media" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\Downloads\Screenshot 2024-09-19 150408.png" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="media" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\Downloads\Screenshot 2024-09-19 150434.png" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variants[0][size]" />
+                        <option name="value" value="M" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variants[0][color_id]" />
+                        <option name="value" value="2" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variants[0][stock_quantity]" />
+                        <option name="value" value="50" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variant_1_media" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\Downloads\Screenshot 2024-09-19 150828.png" />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="multipart/form-data" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="4355dbd4-5777-4c71-8db8-cfa9f50d6ab6" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:5000/media/(1).jpg" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9ZW4+Cjx0aXRsZT41MDAgSW50ZXJuYWwgU2VydmVyIEVycm9yPC90aXRsZT4KPGgxPkludGVybmFsIFNlcnZlciBFcnJvcjwvaDE+CjxwPlRoZSBzZXJ2ZXIgZW5jb3VudGVyZWQgYW4gaW50ZXJuYWwgZXJyb3IgYW5kIHdhcyB1bmFibGUgdG8gY29tcGxldGUgeW91ciByZXF1ZXN0LiBFaXRoZXIgdGhlIHNlcnZlciBpcyBvdmVybG9hZGVkIG9yIHRoZXJlIGlzIGFuIGVycm9yIGluIHRoZSBhcHBsaWNhdGlvbi48L3A+Cg==" />
+              <option name="bodyString" value="&lt;!doctype html&gt;&#10;&lt;html lang=en&gt;&#10;&lt;title&gt;500 Internal Server Error&lt;/title&gt;&#10;&lt;h1&gt;Internal Server Error&lt;/h1&gt;&#10;&lt;p&gt;The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.&lt;/p&gt;&#10;" />
+              <option name="code" value="500" />
+              <option name="contentType" value="text/html; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Server" />
+                    <option name="value" value="Werkzeug/3.0.4 Python/3.12.6" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Fri, 20 Sep 2024 08:44:40 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="text/html; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="265" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="close" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="08182527-786b-4d38-a7a7-53845f9e0752" />
+              <option name="message" value="Internal Server Error" />
+              <option name="prettyResponseType" value="HTML" />
+              <option name="previewType" value="HTML" />
+              <option name="rawBodyString" value="&lt;!doctype html&gt;&#10;&lt;html lang=en&gt;&#10;&lt;title&gt;500 Internal Server Error&lt;/title&gt;&#10;&lt;h1&gt;Internal Server Error&lt;/h1&gt;&#10;&lt;p&gt;The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.&lt;/p&gt;&#10;" />
+              <option name="size" value="265" />
+              <option name="time" value="6" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1726821938158" />
+          <option name="id" value="0aa2bb78-9ade-4d76-9fff-7f73941d59d8" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="product_name" />
+                        <option name="value" value="Sample Product" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="description" />
+                        <option name="value" value="This is a sample product description." />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="price" />
+                        <option name="value" value="19.99" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="fake_price" />
+                        <option name="value" value="25.00" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="stock_quantity" />
+                        <option name="value" value="100" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="sales" />
+                        <option name="value" value="10" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="current_rating_sum" />
+                        <option name="value" value="4.5" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="total_reviews" />
+                        <option name="value" value="50" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="feature_type" />
+                        <option name="value" value="basic" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="gender" />
+                        <option name="value" value="both" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="category_id" />
+                        <option name="value" value="1" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="media" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\Downloads\Screenshot 2024-09-19 150408.png" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="media" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\Downloads\Screenshot 2024-09-19 150434.png" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variants[0][size]" />
+                        <option name="value" value="M" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variants[0][color_id]" />
+                        <option name="value" value="2" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variants[0][stock_quantity]" />
+                        <option name="value" value="50" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variant_1_media" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\Downloads\Screenshot 2024-09-19 150828.png" />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="multipart/form-data" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="4355dbd4-5777-4c71-8db8-cfa9f50d6ab6" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:5000/media/(1).jpg" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9ZW4+Cjx0aXRsZT41MDAgSW50ZXJuYWwgU2VydmVyIEVycm9yPC90aXRsZT4KPGgxPkludGVybmFsIFNlcnZlciBFcnJvcjwvaDE+CjxwPlRoZSBzZXJ2ZXIgZW5jb3VudGVyZWQgYW4gaW50ZXJuYWwgZXJyb3IgYW5kIHdhcyB1bmFibGUgdG8gY29tcGxldGUgeW91ciByZXF1ZXN0LiBFaXRoZXIgdGhlIHNlcnZlciBpcyBvdmVybG9hZGVkIG9yIHRoZXJlIGlzIGFuIGVycm9yIGluIHRoZSBhcHBsaWNhdGlvbi48L3A+Cg==" />
+              <option name="bodyString" value="&lt;!doctype html&gt;&#10;&lt;html lang=en&gt;&#10;&lt;title&gt;500 Internal Server Error&lt;/title&gt;&#10;&lt;h1&gt;Internal Server Error&lt;/h1&gt;&#10;&lt;p&gt;The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.&lt;/p&gt;&#10;" />
+              <option name="code" value="500" />
+              <option name="contentType" value="text/html; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Server" />
+                    <option name="value" value="Werkzeug/3.0.4 Python/3.12.6" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Fri, 20 Sep 2024 08:45:38 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="text/html; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="265" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="close" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="0aa2bb78-9ade-4d76-9fff-7f73941d59d8" />
+              <option name="message" value="Internal Server Error" />
+              <option name="prettyResponseType" value="HTML" />
+              <option name="previewType" value="HTML" />
+              <option name="rawBodyString" value="&lt;!doctype html&gt;&#10;&lt;html lang=en&gt;&#10;&lt;title&gt;500 Internal Server Error&lt;/title&gt;&#10;&lt;h1&gt;Internal Server Error&lt;/h1&gt;&#10;&lt;p&gt;The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.&lt;/p&gt;&#10;" />
+              <option name="size" value="265" />
+              <option name="time" value="4" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1726822340831" />
+          <option name="id" value="27417fd6-35b4-46ef-bad0-bba54e937d73" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="product_name" />
+                        <option name="value" value="Sample Product" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="description" />
+                        <option name="value" value="This is a sample product description." />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="price" />
+                        <option name="value" value="19.99" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="fake_price" />
+                        <option name="value" value="25.00" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="stock_quantity" />
+                        <option name="value" value="100" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="sales" />
+                        <option name="value" value="10" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="current_rating_sum" />
+                        <option name="value" value="4.5" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="total_reviews" />
+                        <option name="value" value="50" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="feature_type" />
+                        <option name="value" value="basic" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="gender" />
+                        <option name="value" value="both" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="category_id" />
+                        <option name="value" value="1" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="media" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\Downloads\Screenshot 2024-09-19 150408.png" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="media" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\Downloads\Screenshot 2024-09-19 150434.png" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variants[0][size]" />
+                        <option name="value" value="M" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variants[0][color_id]" />
+                        <option name="value" value="2" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variants[0][stock_quantity]" />
+                        <option name="value" value="50" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variant_1_media" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\Downloads\Screenshot 2024-09-19 150828.png" />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="multipart/form-data" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="4355dbd4-5777-4c71-8db8-cfa9f50d6ab6" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:5000/media/(1).jpg" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9ZW4+Cjx0aXRsZT40MDQgTm90IEZvdW5kPC90aXRsZT4KPGgxPk5vdCBGb3VuZDwvaDE+CjxwPlRoZSByZXF1ZXN0ZWQgVVJMIHdhcyBub3QgZm91bmQgb24gdGhlIHNlcnZlci4gSWYgeW91IGVudGVyZWQgdGhlIFVSTCBtYW51YWxseSBwbGVhc2UgY2hlY2sgeW91ciBzcGVsbGluZyBhbmQgdHJ5IGFnYWluLjwvcD4K" />
+              <option name="bodyString" value="&lt;!doctype html&gt;&#10;&lt;html lang=en&gt;&#10;&lt;title&gt;404 Not Found&lt;/title&gt;&#10;&lt;h1&gt;Not Found&lt;/h1&gt;&#10;&lt;p&gt;The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.&lt;/p&gt;&#10;" />
+              <option name="code" value="404" />
+              <option name="contentType" value="text/html; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Server" />
+                    <option name="value" value="Werkzeug/3.0.4 Python/3.12.6" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Fri, 20 Sep 2024 08:52:20 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="text/html; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="207" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="close" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="27417fd6-35b4-46ef-bad0-bba54e937d73" />
+              <option name="message" value="Not Found" />
+              <option name="prettyResponseType" value="HTML" />
+              <option name="previewType" value="HTML" />
+              <option name="rawBodyString" value="&lt;!doctype html&gt;&#10;&lt;html lang=en&gt;&#10;&lt;title&gt;404 Not Found&lt;/title&gt;&#10;&lt;h1&gt;Not Found&lt;/h1&gt;&#10;&lt;p&gt;The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.&lt;/p&gt;&#10;" />
+              <option name="size" value="207" />
+              <option name="time" value="8" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1726822469678" />
+          <option name="id" value="02e58659-d1aa-482c-918b-83904e6f3bd4" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="product_name" />
+                        <option name="value" value="Sample Product" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="description" />
+                        <option name="value" value="This is a sample product description." />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="price" />
+                        <option name="value" value="19.99" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="fake_price" />
+                        <option name="value" value="25.00" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="stock_quantity" />
+                        <option name="value" value="100" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="sales" />
+                        <option name="value" value="10" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="current_rating_sum" />
+                        <option name="value" value="4.5" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="total_reviews" />
+                        <option name="value" value="50" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="feature_type" />
+                        <option name="value" value="basic" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="gender" />
+                        <option name="value" value="both" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="category_id" />
+                        <option name="value" value="1" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="media" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\Downloads\Screenshot 2024-09-19 150408.png" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="media" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\Downloads\Screenshot 2024-09-19 150434.png" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variants[0][size]" />
+                        <option name="value" value="M" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variants[0][color_id]" />
+                        <option name="value" value="2" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variants[0][stock_quantity]" />
+                        <option name="value" value="50" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variant_1_media" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\Downloads\Screenshot 2024-09-19 150828.png" />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="multipart/form-data" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="4355dbd4-5777-4c71-8db8-cfa9f50d6ab6" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:5000/media/(1).jpg" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9ZW4+Cjx0aXRsZT40MDQgTm90IEZvdW5kPC90aXRsZT4KPGgxPk5vdCBGb3VuZDwvaDE+CjxwPlRoZSByZXF1ZXN0ZWQgVVJMIHdhcyBub3QgZm91bmQgb24gdGhlIHNlcnZlci4gSWYgeW91IGVudGVyZWQgdGhlIFVSTCBtYW51YWxseSBwbGVhc2UgY2hlY2sgeW91ciBzcGVsbGluZyBhbmQgdHJ5IGFnYWluLjwvcD4K" />
+              <option name="bodyString" value="&lt;!doctype html&gt;&#10;&lt;html lang=en&gt;&#10;&lt;title&gt;404 Not Found&lt;/title&gt;&#10;&lt;h1&gt;Not Found&lt;/h1&gt;&#10;&lt;p&gt;The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.&lt;/p&gt;&#10;" />
+              <option name="code" value="404" />
+              <option name="contentType" value="text/html; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Server" />
+                    <option name="value" value="Werkzeug/3.0.4 Python/3.12.6" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Fri, 20 Sep 2024 08:54:29 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="text/html; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="207" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="close" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="02e58659-d1aa-482c-918b-83904e6f3bd4" />
+              <option name="message" value="Not Found" />
+              <option name="prettyResponseType" value="HTML" />
+              <option name="previewType" value="HTML" />
+              <option name="rawBodyString" value="&lt;!doctype html&gt;&#10;&lt;html lang=en&gt;&#10;&lt;title&gt;404 Not Found&lt;/title&gt;&#10;&lt;h1&gt;Not Found&lt;/h1&gt;&#10;&lt;p&gt;The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.&lt;/p&gt;&#10;" />
+              <option name="size" value="207" />
+              <option name="time" value="4" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1726822952333" />
+          <option name="id" value="aa327a05-16c2-4277-9b53-33d7a30a9806" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="formData">
+                    <list>
+                      <formDataParameterState>
+                        <option name="key" value="product_name" />
+                        <option name="value" value="Sample Product" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="description" />
+                        <option name="value" value="This is a sample product description." />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="price" />
+                        <option name="value" value="19.99" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="fake_price" />
+                        <option name="value" value="25.00" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="stock_quantity" />
+                        <option name="value" value="100" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="sales" />
+                        <option name="value" value="10" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="current_rating_sum" />
+                        <option name="value" value="4.5" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="total_reviews" />
+                        <option name="value" value="50" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="feature_type" />
+                        <option name="value" value="basic" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="gender" />
+                        <option name="value" value="both" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="category_id" />
+                        <option name="value" value="1" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="media" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\Downloads\Screenshot 2024-09-19 150408.png" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="media" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\Downloads\Screenshot 2024-09-19 150434.png" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variants[0][size]" />
+                        <option name="value" value="M" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variants[0][color_id]" />
+                        <option name="value" value="2" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variants[0][stock_quantity]" />
+                        <option name="value" value="50" />
+                      </formDataParameterState>
+                      <formDataParameterState>
+                        <option name="key" value="variant_1_media" />
+                        <option name="type" value="FILE" />
+                        <option name="value" value="C:\Users\krish\Downloads\Screenshot 2024-09-19 150828.png" />
+                      </formDataParameterState>
+                    </list>
+                  </option>
+                  <option name="type" value="FORM_DATA" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="multipart/form-data" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="4355dbd4-5777-4c71-8db8-cfa9f50d6ab6" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:5000/media/hi.jpg" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9ZW4+Cjx0aXRsZT41MDAgSW50ZXJuYWwgU2VydmVyIEVycm9yPC90aXRsZT4KPGgxPkludGVybmFsIFNlcnZlciBFcnJvcjwvaDE+CjxwPlRoZSBzZXJ2ZXIgZW5jb3VudGVyZWQgYW4gaW50ZXJuYWwgZXJyb3IgYW5kIHdhcyB1bmFibGUgdG8gY29tcGxldGUgeW91ciByZXF1ZXN0LiBFaXRoZXIgdGhlIHNlcnZlciBpcyBvdmVybG9hZGVkIG9yIHRoZXJlIGlzIGFuIGVycm9yIGluIHRoZSBhcHBsaWNhdGlvbi48L3A+Cg==" />
+              <option name="bodyString" value="&lt;!doctype html&gt;&#10;&lt;html lang=en&gt;&#10;&lt;title&gt;500 Internal Server Error&lt;/title&gt;&#10;&lt;h1&gt;Internal Server Error&lt;/h1&gt;&#10;&lt;p&gt;The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.&lt;/p&gt;&#10;" />
+              <option name="code" value="500" />
+              <option name="contentType" value="text/html; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Server" />
+                    <option name="value" value="Werkzeug/3.0.4 Python/3.12.6" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Fri, 20 Sep 2024 09:02:32 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="text/html; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="265" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="close" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="aa327a05-16c2-4277-9b53-33d7a30a9806" />
+              <option name="message" value="Internal Server Error" />
+              <option name="prettyResponseType" value="HTML" />
+              <option name="previewType" value="HTML" />
+              <option name="rawBodyString" value="&lt;!doctype html&gt;&#10;&lt;html lang=en&gt;&#10;&lt;title&gt;500 Internal Server Error&lt;/title&gt;&#10;&lt;h1&gt;Internal Server Error&lt;/h1&gt;&#10;&lt;p&gt;The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.&lt;/p&gt;&#10;" />
+              <option name="size" value="265" />
+              <option name="time" value="11" />
             </responseState>
           </option>
           <option name="workspaceId" value="drafts" />

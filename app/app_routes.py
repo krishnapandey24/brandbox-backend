@@ -1,10 +1,12 @@
+import os
 from datetime import datetime
 
 from MySQLdb import IntegrityError
-from flask import Blueprint, send_from_directory, current_app
+from flask import Blueprint, send_from_directory, current_app, abort, send_file
 from flask import request, jsonify
 from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity
 
+import app
 from .models import User, Product, Order, OrderItem, db, Media, Variant, CartItem, Cart, Saved, SavedItem
 
 main = Blueprint('main', __name__)
@@ -14,10 +16,14 @@ main = Blueprint('main', __name__)
 def home():
     return "Hello world"
 
-
 @main.route('/media/<path:filename>')
-def media(filename):
-    return send_from_directory(current_app.config['MEDIA_FOLDER'], filename)
+def serve_media(filename):
+    try:
+        return send_from_directory(current_app.config['MEDIA_FOLDER'], filename)
+    except FileNotFoundError:
+        abort(404)
+
+
 
 @main.route('/login', methods=['POST'])
 def login():
