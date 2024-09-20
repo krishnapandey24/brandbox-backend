@@ -1,7 +1,6 @@
-from sqlalchemy import ForeignKey
-
-from . import db
 from datetime import datetime, timezone
+
+from app import db
 
 
 # User model
