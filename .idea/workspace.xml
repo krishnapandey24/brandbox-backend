@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1852af28-fa51-4ca4-89df-428632e77453" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/add_category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/JetClient/history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JetClient/history.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/JetClient/state.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JetClient/state.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
-    </list>
+    <list default="true" id="1852af28-fa51-4ca4-89df-428632e77453" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +58,7 @@
     &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/krish/Downloads/Screenshot 2024-09-19 150828.png&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/brandbox/brandbox/app/media&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -80,6 +73,11 @@
     ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\brandbox\brandbox\app\media" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Flask" type="Python.FlaskServer" nameIsGenerated="true">
       <module name="brandbox" />
@@ -142,6 +140,7 @@
       <workItem from="1726564021114" duration="6884000" />
       <workItem from="1726728589874" duration="14698000" />
       <workItem from="1726751269055" duration="358000" />
+      <workItem from="1726807491554" duration="2454000" />
     </task>
     <servers />
   </component>

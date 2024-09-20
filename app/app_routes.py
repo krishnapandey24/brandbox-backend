@@ -1,7 +1,7 @@
 from datetime import datetime
 
 from MySQLdb import IntegrityError
-from flask import Blueprint
+from flask import Blueprint, send_from_directory, current_app
 from flask import request, jsonify
 from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity
 
@@ -14,6 +14,10 @@ main = Blueprint('main', __name__)
 def home():
     return "Hello world"
 
+
+@main.route('/media/<path:filename>')
+def media(filename):
+    return send_from_directory(current_app.config['MEDIA_FOLDER'], filename)
 
 @main.route('/login', methods=['POST'])
 def login():
