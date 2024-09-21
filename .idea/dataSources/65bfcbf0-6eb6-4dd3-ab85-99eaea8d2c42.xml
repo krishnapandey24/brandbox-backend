@@ -936,7 +936,7 @@ realquick|schema||realquick||UPDATE|G</Grants>
     </schema>
     <schema id="291" parent="1" name="realquick">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-09-19.09:08:31</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-09-21.04:56:30</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <user id="292" parent="1" name="realquick"/>
@@ -1055,7 +1055,7 @@ realquick|schema||realquick||UPDATE|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="319" parent="294" name="cart_item_id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>3</AutoIncrement>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int|0s</StoredType>
@@ -1112,7 +1112,7 @@ realquick|schema||realquick||UPDATE|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="331" parent="295" name="cart_id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>2</AutoIncrement>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int|0s</StoredType>
@@ -1146,7 +1146,7 @@ realquick|schema||realquick||UPDATE|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="338" parent="296" name="category_id">
-      <AutoIncrement>3</AutoIncrement>
+      <AutoIncrement>13</AutoIncrement>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int|0s</StoredType>
@@ -1203,7 +1203,7 @@ realquick|schema||realquick||UPDATE|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="350" parent="298" name="id">
-      <AutoIncrement>6</AutoIncrement>
+      <AutoIncrement>8</AutoIncrement>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int|0s</StoredType>
@@ -1404,7 +1404,7 @@ realquick|schema||realquick||UPDATE|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="392" parent="302" name="product_id">
-      <AutoIncrement>3</AutoIncrement>
+      <AutoIncrement>16</AutoIncrement>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int|0s</StoredType>
@@ -1429,7 +1429,6 @@ realquick|schema||realquick||UPDATE|G</Grants>
       <StoredType>decimal(10,2 digit)|0s</StoredType>
     </column>
     <column id="397" parent="302" name="stock_quantity">
-      <NotNull>1</NotNull>
       <Position>6</Position>
       <StoredType>int|0s</StoredType>
     </column>
@@ -1547,7 +1546,7 @@ realquick|schema||realquick||UPDATE|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="422" parent="304" name="saved_id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>2</AutoIncrement>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int|0s</StoredType>
@@ -1582,7 +1581,7 @@ realquick|schema||realquick||UPDATE|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="429" parent="305" name="saved_item_id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>2</AutoIncrement>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int|0s</StoredType>
@@ -1639,7 +1638,7 @@ realquick|schema||realquick||UPDATE|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="441" parent="306" name="id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>6</AutoIncrement>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int|0s</StoredType>

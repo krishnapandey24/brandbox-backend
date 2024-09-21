@@ -97,7 +97,15 @@
               <option name="id" value="4355dbd4-5777-4c71-8db8-cfa9f50d6ab6" />
               <option name="method" value="GET" />
               <option name="name" value="Draft" />
-              <option name="url" value="http://localhost:5000/media/hi.jpg" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="per_page" />
+                    <option name="value" value="20" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="url" value="http://localhost:5000/products?per_page=20" />
             </requestState>
           </list>
         </option>

@@ -1,12 +1,11 @@
-import os
 from datetime import datetime
 
 from MySQLdb import IntegrityError
-from flask import Blueprint, send_from_directory, current_app, abort, send_file
+from flask import Blueprint, send_from_directory, current_app, abort
 from flask import request, jsonify
 from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity
+from sqlalchemy import func
 
-import app
 from .models import User, Product, Order, OrderItem, db, Media, Variant, CartItem, Cart, Saved, SavedItem
 
 main = Blueprint('main', __name__)
@@ -68,7 +67,7 @@ def get_products():
     per_page = request.args.get('per_page', 10, type=int)
     sort_by = request.args.get('sort_by', 'created_at')  # Default to 'created_at'
     sort_order = request.args.get('sort_order', 'asc')  # Default to ascending (asc)
-    include_out_of_stock = request.args.get('include_out_of_stock', 'false').lower() == 'true'  # Default to exclude out-of-stock items
+    # include_out_of_stock = request.args.get('include_out_of_stock', 'false').lower() == 'true'  # Default to exclude out-of-stock items
     feature_type = request.args.get('feature_type')  # If feature_type is provided
     gender = request.args.get('gender')
 
@@ -95,8 +94,8 @@ def get_products():
         query = query.filter_by(category_id=category_id)
 
     # Exclude products with 0 stock_quantity if include_out_of_stock is False
-    if not include_out_of_stock:
-        query = query.filter(Product.stock_quantity > 0)
+    # if not include_out_of_stock:
+    #     query = query.filter(Product.stock_quantity > 0)
 
     # Filter by feature_type if it's provided
     if feature_type:
@@ -104,6 +103,10 @@ def get_products():
 
     if gender:
         query = query.filter(Product.gender == gender)
+
+
+    total_products = db.session.query(func.count(Product.product_id)).scalar()
+
 
     # Paginate the query
     paginated_products = query.paginate(page=page, per_page=per_page, error_out=False)
@@ -154,6 +157,8 @@ def get_products():
         'has_next': paginated_products.has_next,
         'has_prev': paginated_products.has_prev
     })
+
+
 
 @main.route('/register', methods=['POST'])
 def register():
