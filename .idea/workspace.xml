@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1852af28-fa51-4ca4-89df-428632e77453" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/JetClient/history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JetClient/history.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/JetClient/state.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JetClient/state.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/65bfcbf0-6eb6-4dd3-ab85-99eaea8d2c42.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/65bfcbf0-6eb6-4dd3-ab85-99eaea8d2c42.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app_routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/app_routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/config.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,30 +52,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Flask server.Flask.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "database.data.extractors.current.export.id": "JSON-Groovy.json.groovy",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/brandbox/brandbox/app/media",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "io.jetclient.pL",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Flask server.Flask.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;JSON-Groovy.json.groovy&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/brandbox/brandbox/app/media&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;io.jetclient.pL&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\brandbox\brandbox\app\media" />
@@ -153,7 +148,9 @@
       <workItem from="1726823295399" duration="119000" />
       <workItem from="1726823477149" duration="1195000" />
       <workItem from="1726825369784" duration="490000" />
-      <workItem from="1726834764589" duration="5410000" />
+      <workItem from="1726834764589" duration="5725000" />
+      <workItem from="1726985588585" duration="28000" />
+      <workItem from="1727050729084" duration="338000" />
     </task>
     <servers />
   </component>

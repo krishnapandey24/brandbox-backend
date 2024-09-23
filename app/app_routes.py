@@ -75,8 +75,8 @@ def get_products():
     sortable_fields = {
         'sales': Product.sales,
         'price': Product.price,
-        'total_reviews': Product.total_reviews,
-        'created_at': Product.created_at
+        'reviews': Product.total_reviews,
+        'created': Product.created_at
     }
 
     # Validate sort_by field
