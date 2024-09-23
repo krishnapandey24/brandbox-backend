@@ -105,7 +105,6 @@ def get_products():
         query = query.filter(Product.gender == gender)
 
 
-    total_products = db.session.query(func.count(Product.product_id)).scalar()
 
 
     # Paginate the query
