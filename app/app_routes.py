@@ -1,4 +1,5 @@
 from datetime import datetime
+from tkinter.tix import IMAGE
 
 from MySQLdb import IntegrityError
 from flask import Blueprint, send_from_directory, current_app, abort
@@ -10,6 +11,8 @@ from .models import User, Product, Order, OrderItem, db, Media, Variant, CartIte
 
 main = Blueprint('main', __name__)
 
+
+IMAGE_BASE_URL="https://brandbox.pythonanywhere.com/media/"
 
 @main.route('/')
 def home():
@@ -107,7 +110,7 @@ def get_products():
     for product in paginated_products.items:
         # Fetch all media for the product (multiple media files as an array of URLs)
         media_files = Media.query.filter_by(product_id=product.product_id).order_by(Media.created_at).all()
-        media_urls = [media.name for media in media_files] if media_files else []
+        media_urls = [f"{IMAGE_BASE_URL}{media.name}" for media in media_files] if media_files else []
 
         # Fetch variants for the product
         variants = Variant.query.filter_by(product_id=product.product_id).all()
@@ -115,7 +118,7 @@ def get_products():
         for variant in variants:
             # Fetch all media for each variant (multiple media files as an array of URLs)
             variant_media_files = Media.query.filter_by(variant_id=variant.variant_id).order_by(Media.created_at).all()
-            variant_media_urls = [media.name for media in variant_media_files] if variant_media_files else []
+            variant_media_urls = [f"{IMAGE_BASE_URL}{media.name}" for media in variant_media_files] if variant_media_files else []
 
             variant_dict = {
                 column.name: getattr(variant, column.name) for column in variant.__table__.columns
