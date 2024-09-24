@@ -67,7 +67,6 @@ def get_products():
     per_page = request.args.get('per_page', 10, type=int)
     sort_by = request.args.get('sort_by', 'created_at')  # Default to 'created_at'
     sort_order = request.args.get('sort_order', 'asc')  # Default to ascending (asc)
-    # include_out_of_stock = request.args.get('include_out_of_stock', 'false').lower() == 'true'  # Default to exclude out-of-stock items
     feature_type = request.args.get('feature_type')  # If feature_type is provided
     gender = request.args.get('gender')
 
@@ -93,10 +92,6 @@ def get_products():
     if category_id:
         query = query.filter_by(category_id=category_id)
 
-    # Exclude products with 0 stock_quantity if include_out_of_stock is False
-    # if not include_out_of_stock:
-    #     query = query.filter(Product.stock_quantity > 0)
-
     # Filter by feature_type if it's provided
     if feature_type:
         query = query.filter_by(feature_type=feature_type)
@@ -104,31 +99,28 @@ def get_products():
     if gender:
         query = query.filter(Product.gender == gender)
 
-
-
-
     # Paginate the query
     paginated_products = query.paginate(page=page, per_page=per_page, error_out=False)
 
     # Build the result list with all product details
     result = []
     for product in paginated_products.items:
-        # Fetch the first media for the product
-        first_media = Media.query.filter_by(product_id=product.product_id).order_by(Media.created_at).first()
-        media_url = first_media.name if first_media else None  # Get the name or None if no media
+        # Fetch all media for the product (multiple media files as an array of URLs)
+        media_files = Media.query.filter_by(product_id=product.product_id).order_by(Media.created_at).all()
+        media_urls = [media.name for media in media_files] if media_files else []
 
         # Fetch variants for the product
         variants = Variant.query.filter_by(product_id=product.product_id).all()
         variant_list = []
         for variant in variants:
-            # Fetch the first media for each variant
-            first_variant_media = Media.query.filter_by(variant_id=variant.variant_id).order_by(Media.created_at).first()
-            variant_media_url = first_variant_media.name if first_variant_media else None
+            # Fetch all media for each variant (multiple media files as an array of URLs)
+            variant_media_files = Media.query.filter_by(variant_id=variant.variant_id).order_by(Media.created_at).all()
+            variant_media_urls = [media.name for media in variant_media_files] if variant_media_files else []
 
             variant_dict = {
                 column.name: getattr(variant, column.name) for column in variant.__table__.columns
             }
-            variant_dict['media'] = variant_media_url
+            variant_dict['media'] = variant_media_urls  # Media for each variant as an array
 
             variant_list.append(variant_dict)
 
@@ -137,12 +129,13 @@ def get_products():
             column.name: getattr(product, column.name) for column in product.__table__.columns
         }
 
+        # Calculate average rating (float with 1 decimal place)
         avg_rating = None
         if product.total_reviews > 0:
-            avg_rating = product.current_rating_sum / product.total_reviews
+            avg_rating = round(product.current_rating_sum / product.total_reviews, 1)
 
-        product_dict['media'] = media_url
-        product_dict['average_rating'] = avg_rating
+        product_dict['media'] = media_urls  # Media for the product as an array
+        product_dict['average_rating'] = avg_rating  # Float rating rounded to 1 decimal
         product_dict['variants'] = variant_list
 
         result.append(product_dict)
@@ -156,7 +149,6 @@ def get_products():
         'has_next': paginated_products.has_next,
         'has_prev': paginated_products.has_prev
     })
-
 
 
 @main.route('/register', methods=['POST'])
