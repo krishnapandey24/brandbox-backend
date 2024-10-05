@@ -5,7 +5,6 @@ from MySQLdb import IntegrityError
 from flask import Blueprint, send_from_directory, current_app, abort
 from flask import request, jsonify
 from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity
-from sqlalchemy import func
 
 from .models import User, Product, Order, OrderItem, db, Media, Variant, CartItem, Cart, Saved, SavedItem
 
