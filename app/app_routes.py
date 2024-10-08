@@ -1,12 +1,11 @@
 from datetime import datetime
-from tkinter.tix import IMAGE
 
 from MySQLdb import IntegrityError
 from flask import Blueprint, send_from_directory, current_app, abort
 from flask import request, jsonify
 from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity
 
-from .models import User, Product, Order, OrderItem, db, Media, Variant, CartItem, Cart, Saved, SavedItem
+from .models import User, Product, Order, OrderItem, db, Media, Variant, CartItem, Cart, Saved, SavedItem, Color
 
 main = Blueprint('main', __name__)
 
@@ -108,23 +107,41 @@ def get_products():
     result = []
     for product in paginated_products.items:
         # Fetch all media for the product (multiple media files as an array of URLs)
-        media_files = Media.query.filter_by(product_id=product.product_id).order_by(Media.created_at).all()
+        media_files = Media.query.filter_by(product_id=product.product_id, variant_id=None).order_by(Media.created_at).all()
         media_urls = [f"{IMAGE_BASE_URL}{media.name}" for media in media_files] if media_files else []
 
         # Fetch variants for the product
         variants = Variant.query.filter_by(product_id=product.product_id).all()
-        variant_list = []
+        # Group variants by color and size for easier parsing in the client-side
+        variant_groups = {}
         for variant in variants:
-            # Fetch all media for each variant (multiple media files as an array of URLs)
-            variant_media_files = Media.query.filter_by(variant_id=variant.variant_id).order_by(Media.created_at).all()
-            variant_media_urls = [f"{IMAGE_BASE_URL}{media.name}" for media in variant_media_files] if variant_media_files else []
+            color = Color.query.get(variant.color_id)
 
-            variant_dict = {
-                column.name: getattr(variant, column.name) for column in variant.__table__.columns
+            # Create a key based on color to group variants
+            color_key = f"{color.color_name} ({color.color_code})" if color else 'No Color'
+            if color_key not in variant_groups:
+                variant_groups[color_key] = {
+                    'color': {
+                        'id': color.color_id if color else None,
+                        'name': color.color_name if color else 'No Color',
+                        'code': color.color_code if color else None
+                    },
+                    'sizes': []
+                }
+
+            # Add the size and stock to the size list for this color group
+            variant_data = {
+                'size': variant.size,
+                'stock_quantity': variant.stock_quantity,
+                'variant_id': variant.variant_id
             }
-            variant_dict['media'] = variant_media_urls  # Media for each variant as an array
 
-            variant_list.append(variant_dict)
+            # Fetch all media for the variant
+            variant_media_files = Media.query.filter_by(variant_id=variant.variant_id).order_by(Media.created_at).all()
+            variant_data['media'] = [f"{IMAGE_BASE_URL}{media.name}" for media in variant_media_files]
+
+            # Append to sizes array within the color group
+            variant_groups[color_key]['sizes'].append(variant_data)
 
         # Build product dictionary
         product_dict = {
@@ -138,7 +155,7 @@ def get_products():
 
         product_dict['media'] = media_urls  # Media for the product as an array
         product_dict['average_rating'] = avg_rating  # Float rating rounded to 1 decimal
-        product_dict['variants'] = variant_list
+        product_dict['variants'] = variant_groups  # Grouped variants by color and size
 
         result.append(product_dict)
 
@@ -151,6 +168,7 @@ def get_products():
         'has_next': paginated_products.has_next,
         'has_prev': paginated_products.has_prev
     })
+
 
 
 @main.route('/register', methods=['POST'])
